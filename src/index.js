@@ -10,6 +10,10 @@ module.exports = function count(s, pairs) {
     nNum *= pairs[i][0] ** pairs[i][1];
   }
 
+  if(nNum > 184848300) {
+    return;
+  }
+
   var calculateGreatestCommonDivisor = function(a, b) {
     var temp;
     while(b !== 0) {
