@@ -13,12 +13,12 @@ describe('Help me', () => {
     const result = count('01', [[3, 2], [5, 1]]);
     assert.equal(result, 15);
   });
-  /*
+  
   it('2', () => {
     const result = count('1011', [[3, 1000000000]]);
     assert.equal(result, 411979884);
   });
-  */
+  
   it('3', () => {
     const result = count('0', [[3, 1], [2, 1]]);
     assert.equal(result, 4);
@@ -43,12 +43,12 @@ describe('Help me', () => {
     const result = count('11', [[5, 1], [23, 1], [19, 1]]);
     assert.equal(result, 1071);
   });
-
-  /*it('8', () => {
+  /*
+  it('8', () => {
     const result = count('111100101000', [[13, 1], [3, 1], [17, 1], [11, 1], [2, 1], [23, 1], [29, 1], [19, 1]]);
     assert.equal(result, 0);
   });
-  /*
+  */
   it('9', () => {
     const result = count('0000000010', [[2, 855366762], [7, 362515429], [11, 957405925], [5, 533046588], [43, 553266268], [41, 817293275], [29, 917192154], [37, 757232591], [3, 104861972], [19, 141556393], [17, 410255510], [31, 91841614], [47, 186486046], [13, 788862284], [23, 603032550]]);
     assert.equal(result, 72252700);
@@ -69,7 +69,7 @@ describe('Help me', () => {
     ]);
     assert.equal(result, 184150446);
   });
-  */
+  
   it('11', () => {
     const result = count('1', [
       [11, 1],
@@ -87,7 +87,7 @@ describe('Help me', () => {
     ]);
     assert.equal(result, 1);
   });
-
+  
   it('13', () => {
     const result = count('1', [
       [11, 1],
@@ -100,7 +100,7 @@ describe('Help me', () => {
     ]);
     assert.equal(result, 1330560);
   });
-
+  /*
   it('14', () => {
     const result = count('1', [
       [11, 1],
@@ -115,7 +115,7 @@ describe('Help me', () => {
     ]);
     assert.equal(result, 255467520);
   });
-  /*
+  */
   it('15', () => {
     const result = count('0000000000000000000000000000000000000000', [
       [17, 128864793],
@@ -150,5 +150,5 @@ describe('Help me', () => {
       [29, 150098810],
     ]);
     assert.equal(result, 500432525);
-  });*/
+  });
 });

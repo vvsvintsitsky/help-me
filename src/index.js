@@ -1,29 +1,29 @@
 module.exports = function count(s, pairs) {
   var answer = 0;
 
+  if(pairs[0][1] > 10) {
+    return;
+  }
+
   var nNum = pairs[0][0] ** pairs[0][1];
   for(var i = 1; i < pairs.length; i++) {
-    if(pairs[i][1] < 10) {
-      nNum *= pairs[i][0] ** pairs[i][1];
-    } else {
-      return;
-    }
+    nNum *= pairs[i][0] ** pairs[i][1];
   }
 
   var calculateGreatestCommonDivisor = function(a, b) {
-    /*var temp;
+    var temp;
     while(b !== 0) {
       temp = a;
       a = b;
-      b %= temp;
+      b = temp % b;
     }
-    return a;*/
+    return a;
 
-    if (b === 0) {
+    /*if (b === 0) {
       return a;
     } else {
       return calculateGreatestCommonDivisor(b, a % b);
-    }
+    }*/
   }
 
   var greatestCommonDivisors = [];
