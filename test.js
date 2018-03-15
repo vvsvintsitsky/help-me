@@ -13,7 +13,7 @@ describe('Help me', () => {
     const result = count('01', [[3, 2], [5, 1]]);
     assert.equal(result, 15);
   });
-  
+ 
   it('2', () => {
     const result = count('1011', [[3, 1000000000]]);
     assert.equal(result, 411979884);
